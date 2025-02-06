@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "SabaNews.AutoJobs": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

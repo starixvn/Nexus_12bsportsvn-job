@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <CodeAnalysisRuleSet>..\.sonarlint\sabanewscsharp.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="ViewModel\Poll\**" />
+    <EmbeddedResource Remove="ViewModel\Poll\**" />
+    <None Remove="ViewModel\Poll\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <AdditionalFiles Include="..\.sonarlint\sabanews\CSharp\SonarLint.xml" Link="SonarLint.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Livescore\SabaNews.Livescore.Models\SabaNews.Livescore.Models.csproj" />
+    <ProjectReference Include="..\SabaNews.Core\SabaNews.Core.csproj" />
+  </ItemGroup>
+</Project>

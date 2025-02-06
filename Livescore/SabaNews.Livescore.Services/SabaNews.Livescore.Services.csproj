@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <CodeAnalysisRuleSet>..\..\.sonarlint\sabanewscsharp.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <AdditionalFiles Include="..\..\.sonarlint\sabanews\CSharp\SonarLint.xml" Link="SonarLint.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Fanex.Data.Repository" Version="4.3.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\SabaNews.Core\SabaNews.Core.csproj" />
+    <ProjectReference Include="..\SabaNews.Livescore.Models\SabaNews.Livescore.Models.csproj" />
+    <ProjectReference Include="..\SabaNews.Livescore.Repositories\SabaNews.Livescore.Repositories.csproj" />
+  </ItemGroup>
+</Project>

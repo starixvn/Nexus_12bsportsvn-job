@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  sabanews.site:
+    image: ${DOCKER_REGISTRY-}sabanewssite
+    build:
+      context: .
+      dockerfile: SabaNews.Site/Dockerfile

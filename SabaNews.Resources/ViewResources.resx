@@ -1,0 +1,1113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Action" xml:space="preserve">
+    <value>Action</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Thêm</value>
+  </data>
+  <data name="Announcement" xml:space="preserve">
+    <value>Announcement</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Trở lại</value>
+  </data>
+  <data name="Backstage" xml:space="preserve">
+    <value>Hậu Trường</value>
+  </data>
+  <data name="Ball" xml:space="preserve">
+    <value>Bóng</value>
+  </data>
+  <data name="Basketball" xml:space="preserve">
+    <value>Bóng rổ</value>
+  </data>
+  <data name="Change" xml:space="preserve">
+    <value>Thay đổi</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>Đổi mật khẩu</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>close</value>
+  </data>
+  <data name="Comment" xml:space="preserve">
+    <value>Bình luận</value>
+  </data>
+  <data name="CommentMostInterested" xml:space="preserve">
+    <value>Quan tâm nhất</value>
+  </data>
+  <data name="CommentMostRecent" xml:space="preserve">
+    <value>Mới nhất</value>
+  </data>
+  <data name="CommentReply" xml:space="preserve">
+    <value>Trả lời</value>
+  </data>
+  <data name="ConfirmAction" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="ConfirmEmail" xml:space="preserve">
+    <value>Xác thực email</value>
+  </data>
+  <data name="ConfirmEmailSuccessfully" xml:space="preserve">
+    <value>Xác thực email thành công!</value>
+  </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>Xác nhận mật khẩu</value>
+  </data>
+  <data name="Connect" xml:space="preserve">
+    <value>Liên kết</value>
+  </data>
+  <data name="Connecting" xml:space="preserve">
+    <value>Đang liên kết</value>
+  </data>
+  <data name="Content" xml:space="preserve">
+    <value>Content</value>
+  </data>
+  <data name="CopyClipBoardSuccessfully" xml:space="preserve">
+    <value>Copy link thành công</value>
+  </data>
+  <data name="CopyLink" xml:space="preserve">
+    <value>Sao chép đường dẫn </value>
+  </data>
+  <data name="CreatedBy" xml:space="preserve">
+    <value>Created By</value>
+  </data>
+  <data name="Disconnect" xml:space="preserve">
+    <value>Ngắt liên kết</value>
+  </data>
+  <data name="Draft" xml:space="preserve">
+    <value>Draft</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="EmailContent" xml:space="preserve">
+    <value>Email Content</value>
+  </data>
+  <data name="EmailTitle" xml:space="preserve">
+    <value>Email Title</value>
+  </data>
+  <data name="EmbeddedUrl" xml:space="preserve">
+    <value>Embedded Url</value>
+  </data>
+  <data name="EmptyProfileTitle" xml:space="preserve">
+    <value>Trang cá nhân của trên SABA Sports</value>
+  </data>
+  <data name="ErrorConnectSocial" xml:space="preserve">
+    <value>Email liên kết không trùng khớp</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Thoát</value>
+  </data>
+  <data name="ExpiredLink" xml:space="preserve">
+    <value>Link đã hết hạn</value>
+  </data>
+  <data name="Euro2024Management" xml:space="preserve">
+    <value>Euro 2024 Management</value>
+  </data>
+  <data name="Facebook" xml:space="preserve">
+    <value>Facebook</value>
+  </data>
+  <data name="Failed" xml:space="preserve">
+    <value>Failed</value>
+  </data>
+  <data name="Female" xml:space="preserve">
+    <value>Nữ</value>
+  </data>
+  <data name="Football" xml:space="preserve">
+    <value>Bóng đá</value>
+  </data>
+  <data name="FootballInside" xml:space="preserve">
+    <value>Trong nước</value>
+  </data>
+  <data name="FootballInsideSlug" xml:space="preserve">
+    <value>bong-da-trong-nuoc</value>
+  </data>
+  <data name="FootballOutside" xml:space="preserve">
+    <value>Quốc tế</value>
+  </data>
+  <data name="FootballOutsideSlug" xml:space="preserve">
+    <value>bong-da-quoc-te</value>
+  </data>
+  <data name="FootballSlug" xml:space="preserve">
+    <value>bong-da</value>
+  </data>
+  <data name="ForgotPassword" xml:space="preserve">
+    <value>Quên mật khẩu</value>
+  </data>
+  <data name="FromDate" xml:space="preserve">
+    <value>From Date</value>
+  </data>
+  <data name="Google" xml:space="preserve">
+    <value>Google</value>
+  </data>
+  <data name="Guess" xml:space="preserve">
+    <value>Nhận định - dự đoán</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>587</value>
+  </data>
+  <data name="HotNews" xml:space="preserve">
+    <value>Tin nóng</value>
+  </data>
+  <data name="IncorrectLinkForConfirmEmail" xml:space="preserve">
+    <value>Link xác thực email không đúng</value>
+  </data>
+  <data name="IncorrectLinkForResetPassword" xml:space="preserve">
+    <value>Link lấy lại mật khẩu không đúng</value>
+  </data>
+  <data name="InputEmailForResetPassword" xml:space="preserve">
+    <value>Nhập email của bạn để lấy lại mật khẩu</value>
+  </data>
+  <data name="InputNewPassword" xml:space="preserve">
+    <value>Nhập mật khẩu mới</value>
+  </data>
+  <data name="IsClicked" xml:space="preserve">
+    <value>IsClicked</value>
+  </data>
+  <data name="ListEmail" xml:space="preserve">
+    <value>List Emails</value>
+  </data>
+  <data name="ListSentEmailDetail" xml:space="preserve">
+    <value>List sent email detail</value>
+  </data>
+  <data name="ListSentMail" xml:space="preserve">
+    <value>List sent email</value>
+  </data>
+  <data name="UserList" xml:space="preserve">
+    <value>User List</value>
+  </data>
+  <data name="LoadingAvatar" xml:space="preserve">
+    <value>Đang tải ảnh đại diện</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Đăng nhập</value>
+  </data>
+  <data name="LoginWithEmail" xml:space="preserve">
+    <value>Đăng nhập với email</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Đăng xuất</value>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>Nam</value>
+  </data>
+  <data name="Mascot" xml:space="preserve">
+    <value>Linh vật</value>
+  </data>
+  <data name="MatchScheduleSlug" xml:space="preserve">
+    <value>lich-thi-dau</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>Thông Báo</value>
+  </data>
+  <data name="MessageRequestLogin" xml:space="preserve">
+    <value>Vui Lòng đăng nhập để thực hiện chức năng này!</value>
+  </data>
+  <data name="MyAccount" xml:space="preserve">
+    <value>Tài khoản của tôi</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Tên</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="NoConnect" xml:space="preserve">
+    <value>Chưa liên kết</value>
+  </data>
+  <data name="NoSavedPosts" xml:space="preserve">
+    <value>Chưa có tin nào được lưu</value>
+  </data>
+  <data name="NotFoundPostMsg" xml:space="preserve">
+    <value>Rất tiếc, chúng tôi không tìm thấy bài viết nào!</value>
+  </data>
+  <data name="Clicks" xml:space="preserve">
+    <value>Clicks</value>
+  </data>
+  <data name="Sendings" xml:space="preserve">
+    <value>Sendings</value>
+  </data>
+  <data name="OriginalUrl" xml:space="preserve">
+    <value>Original Url</value>
+  </data>
+  <data name="Other" xml:space="preserve">
+    <value>Khác</value>
+  </data>
+  <data name="OtherPosts" xml:space="preserve">
+    <value>Tin thể thao</value>
+  </data>
+  <data name="Overview" xml:space="preserve">
+    <value>Tổng quan</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Mật khẩu</value>
+  </data>
+  <data name="ProfileAccount" xml:space="preserve">
+    <value>Tài khoản</value>
+  </data>
+  <data name="ProfileGender" xml:space="preserve">
+    <value>Giới tính</value>
+  </data>
+  <data name="ProfileNoSelected" xml:space="preserve">
+    <value>Chưa lựa chọn</value>
+  </data>
+  <data name="ProfilePersonalInfo" xml:space="preserve">
+    <value>Thông tin cá nhân</value>
+  </data>
+  <data name="ProfilePhone" xml:space="preserve">
+    <value>Điện thoại</value>
+  </data>
+  <data name="ProfilePhoneUpdateTitle" xml:space="preserve">
+    <value>Số điện thoại</value>
+  </data>
+  <data name="ProfilePhoneValidate" xml:space="preserve">
+    <value>Chưa có số điện thoại</value>
+  </data>
+  <data name="ProfilePhoto" xml:space="preserve">
+    <value>Ảnh đại diện</value>
+  </data>
+  <data name="ProfileShowWhenComment" xml:space="preserve">
+    <value>Hiển thị khi bạn tham gia bình luận</value>
+  </data>
+  <data name="ProfileUploadNewPhoto" xml:space="preserve">
+    <value>Tải lên ảnh đại diện mới</value>
+  </data>
+  <data name="RecentsPost" xml:space="preserve">
+    <value>Tin mới nhất</value>
+  </data>
+  <data name="Record" xml:space="preserve">
+    <value>Kỷ lục</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Tạo tài khoản</value>
+  </data>
+  <data name="RelatedPosts" xml:space="preserve">
+    <value>Có thể bạn quan tâm</value>
+  </data>
+  <data name="ResetPassword" xml:space="preserve">
+    <value>Lấy lại mật khẩu</value>
+  </data>
+  <data name="Reviewing" xml:space="preserve">
+    <value>Reviewing</value>
+  </data>
+  <data name="ReviewSendEmail" xml:space="preserve">
+    <value>Review Send Email</value>
+  </data>
+  <data name="SabasportsCommitmentSecureInfo" xml:space="preserve">
+    <value>SABA Sports cam kết bảo mật thông tin này</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Lưu lại</value>
+  </data>
+  <data name="SaveAndSend" xml:space="preserve">
+    <value>Save &amp; Send</value>
+  </data>
+  <data name="SavedPost" xml:space="preserve">
+    <value>Tin đã lưu</value>
+  </data>
+  <data name="SaveEmail" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="SavePost" xml:space="preserve">
+    <value>Lưu bài viết</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Tìm kiếm...</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>Gửi</value>
+  </data>
+  <data name="SendMail" xml:space="preserve">
+    <value>Send email</value>
+  </data>
+  <data name="SentDate" xml:space="preserve">
+    <value>Sent Date</value>
+  </data>
+  <data name="SendEmail" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="SendTestEmailTo" xml:space="preserve">
+    <value>Send test email to</value>
+  </data>
+  <data name="SendTo" xml:space="preserve">
+    <value>Send To:</value>
+  </data>
+  <data name="Sent" xml:space="preserve">
+    <value>Sent</value>
+  </data>
+  <data name="Share" xml:space="preserve">
+    <value>Chia sẻ:</value>
+  </data>
+  <data name="ShareFacebook" xml:space="preserve">
+    <value>Chia sẻ qua Facebook</value>
+  </data>
+  <data name="ShareMail" xml:space="preserve">
+    <value>Chia sẻ qua Email</value>
+  </data>
+  <data name="Stadium" xml:space="preserve">
+    <value>Sân vận động</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="STT" xml:space="preserve">
+    <value>#</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="Success" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="Team" xml:space="preserve">
+    <value>Đội tuyển</value>
+  </data>
+  <data name="Tennis" xml:space="preserve">
+    <value>Quần vợt</value>
+  </data>
+  <data name="TestSendEmail" xml:space="preserve">
+    <value>Test Send Email</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="ToDate" xml:space="preserve">
+    <value>To Date</value>
+  </data>
+  <data name="Today" xml:space="preserve">
+    <value>Hôm nay</value>
+  </data>
+  <data name="TopGoalScorer" xml:space="preserve">
+    <value>Vua phá lưới</value>
+  </data>
+  <data name="Transfer" xml:space="preserve">
+    <value>Thị trường chuyển nhượng</value>
+  </data>
+  <data name="UnsubscribeSuccessfully" xml:space="preserve">
+    <value>Bỏ theo dõi thành công</value>
+  </data>
+  <data name="ValidateGender" xml:space="preserve">
+    <value>Vui lòng chọn giới tính</value>
+  </data>
+  <data name="ValidateLengthNewPassword" xml:space="preserve">
+    <value>Mật khẩu mới tối thiểu 6 kí tự</value>
+  </data>
+  <data name="ValidateLengthOldPassword" xml:space="preserve">
+    <value>Mật khẩu cũ tối thiểu 6 kí tự</value>
+  </data>
+  <data name="ValidateName" xml:space="preserve">
+    <value>Vui lòng nhập tên</value>
+  </data>
+  <data name="Video" xml:space="preserve">
+    <value>Video</value>
+  </data>
+  <data name="VideoSlug" xml:space="preserve">
+    <value>video</value>
+  </data>
+  <data name="ViewDataDescription" xml:space="preserve">
+    <value>description</value>
+  </data>
+  <data name="ViewDataHeadTitle" xml:space="preserve">
+    <value>HeadTitle</value>
+  </data>
+  <data name="ViewDataTitle" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="Administration" xml:space="preserve">
+    <value>Administration</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="Articles" xml:space="preserve">
+    <value>Articles</value>
+  </data>
+  <data name="TotalViews" xml:space="preserve">
+    <value>Total Views</value>
+  </data>
+  <data name="PostViewStatistic" xml:space="preserve">
+    <value>Post Statistics</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="Clicked" xml:space="preserve">
+    <value>Clicked</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="EmptyData" xml:space="preserve">
+    <value>There is no data</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="Resend" xml:space="preserve">
+    <value>Resend</value>
+  </data>
+  <data name="CreatedDate" xml:space="preserve">
+    <value>Created Date</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="Successful" xml:space="preserve">
+    <value>Successful</value>
+  </data>
+  <data name="ListEmailDetail" xml:space="preserve">
+    <value>List email details</value>
+  </data>
+  <data name="CreateElectronicDirectMail" xml:space="preserve">
+    <value>Create Electronic Direct Mail </value>
+  </data>
+  <data name="SendStatus" xml:space="preserve">
+    <value>Send Status</value>
+  </data>
+  <data name="PostViewStatisticPage" xml:space="preserve">
+    <value>PostViewStatisticPage</value>
+  </data>
+  <data name="UserInteraction" xml:space="preserve">
+    <value>User Interaction</value>
+  </data>
+  <data name="CreateEDM" xml:space="preserve">
+    <value>Create EDM</value>
+  </data>
+  <data name="EditElectronicDirectMail" xml:space="preserve">
+    <value>Edit Electronic Direct Mail</value>
+  </data>
+  <data name="ListDetailElectronicDirectMail" xml:space="preserve">
+    <value>List Detail Electronic Direct Mail</value>
+  </data>
+  <data name="EDMList" xml:space="preserve">
+    <value>EDM List</value>
+  </data>
+  <data name="ListElectronicDirectMail" xml:space="preserve">
+    <value>List Electronic Direct Mail</value>
+  </data>
+  <data name="ArticleViews" xml:space="preserve">
+    <value>Article views</value>
+  </data>
+  <data name="Videos" xml:space="preserve">
+    <value>Videos</value>
+  </data>
+  <data name="VideoViews" xml:space="preserve">
+    <value>Video views</value>
+  </data>
+  <data name="TooltipIcon" xml:space="preserve">
+    <value>(i)</value>
+  </data>
+  <data name="ArticleTooltipContent" xml:space="preserve">
+    <value>Views of articles published on the Created Date, and is accumulated to the present time.</value>
+  </data>
+  <data name="VideoTooltipContent" xml:space="preserve">
+    <value>Views of videos published on the Created Date, and is accumulated to the present time.</value>
+  </data>
+  <data name="BackToEmailList" xml:space="preserve">
+    <value>Back to email list</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="IncorrectLinkUnsubscribeUser" xml:space="preserve">
+    <value>Link bỏ theo dõi không đúng</value>
+  </data>
+  <data name="ConfirmUnsubscribeUser" xml:space="preserve">
+    <value>Bạn có chắc muốn bỏ theo dõi tin tức từ Saba Sports?</value>
+  </data>
+  <data name="FilterStatisticDetail" xml:space="preserve">
+    <value>Please select the time period in which the articles and videos are published:</value>
+  </data>
+  <data name="Confirmation" xml:space="preserve">
+    <value>Confirmation</value>
+  </data>
+  <data name="Percentage" xml:space="preserve">
+    <value>Percentage</value>
+  </data>
+  <data name="FollowSabaSports" xml:space="preserve">
+    <value>Theo dõi và nhận tin tức từ SABA Sports</value>
+  </data>
+  <data name="Option" xml:space="preserve">
+    <value>Tùy chọn</value>
+  </data>
+  <data name="Article" xml:space="preserve">
+    <value>Article</value>
+  </data>
+  <data name="VideoDetails" xml:space="preserve">
+    <value>Video Details</value>
+  </data>
+  <data name="ArticleDetails" xml:space="preserve">
+    <value>Article Details</value>
+  </data>
+  <data name="CreatedTime" xml:space="preserve">
+    <value>Created Time</value>
+  </data>
+  <data name="BackToPostStatistic" xml:space="preserve">
+    <value>Back to Post Statistic</value>
+  </data>
+  <data name="SiteName" xml:space="preserve">
+    <value>SABA Sports</value>
+  </data>
+  <data name="Author" xml:space="preserve">
+    <value>Author</value>
+  </data>
+  <data name="Sum" xml:space="preserve">
+    <value>Tổng cộng</value>
+  </data>
+  <data name="UpdateTime" xml:space="preserve">
+    <value>Thời gian cập nhật</value>
+  </data>
+  <data name="ViewResult" xml:space="preserve">
+    <value>Xem Kết quả</value>
+  </data>
+  <data name="Vote" xml:space="preserve">
+    <value>Bình chọn</value>
+  </data>
+  <data name="VoteResult" xml:space="preserve">
+    <value>Kết quả bình chọn</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>Role</value>
+  </data>
+  <data name="CustomerRole" xml:space="preserve">
+    <value>Customer</value>
+  </data>
+  <data name="RegisterDate" xml:space="preserve">
+    <value>Register Date</value>
+  </data>
+  <data name="SearchLabel" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="JoinedDate" xml:space="preserve">
+    <value>Joined Date</value>
+  </data>
+  <data name="Subscriber" xml:space="preserve">
+    <value>Subscriber</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="NameLabel" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Users" xml:space="preserve">
+    <value>Users</value>
+  </data>
+  <data name="UserReport" xml:space="preserve">
+    <value>User Report</value>
+  </data>
+  <data name="BannerManagement" xml:space="preserve">
+    <value>Banner Management</value>
+  </data>
+  <data name="BannerDisplayInDesktopTopScreen" xml:space="preserve">
+    <value>Banner display in desktop top screen</value>
+  </data>
+  <data name="BannerDisplayInMobileTopScreen" xml:space="preserve">
+    <value>Banner display in mobile top screen</value>
+  </data>
+  <data name="BannerInfo" xml:space="preserve">
+    <value>Banner Information</value>
+  </data>
+  <data name="ChangeAction" xml:space="preserve">
+    <value>Change</value>
+  </data>
+  <data name="DesktopTopBanner" xml:space="preserve">
+    <value>Top</value>
+  </data>
+  <data name="DesktopUrl" xml:space="preserve">
+    <value>Desktop Url</value>
+  </data>
+  <data name="FileBrowser" xml:space="preserve">
+    <value>File Browser</value>
+  </data>
+  <data name="ListUploadedBanner" xml:space="preserve">
+    <value>List Uploaded Banner</value>
+  </data>
+  <data name="MobileTopBanner" xml:space="preserve">
+    <value>Top</value>
+  </data>
+  <data name="MobileUrl" xml:space="preserve">
+    <value>Mobile Url</value>
+  </data>
+  <data name="MostViewTitle" xml:space="preserve">
+    <value>Xem nhiều nhất</value>
+  </data>
+  <data name="NavigateWhenClickIntoDesktopTopBanner" xml:space="preserve">
+    <value>Navigate when click into desktop top banner</value>
+  </data>
+  <data name="NavigationUrl" xml:space="preserve">
+    <value>URL</value>
+  </data>
+  <data name="NavigationUrlRequired" xml:space="preserve">
+    <value>NavigationUrl is requred</value>
+  </data>
+  <data name="SaveAction" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="UploadNewImage" xml:space="preserve">
+    <value>Upload new image</value>
+  </data>
+  <data name="UploadedBanners" xml:space="preserve">
+    <value>Uploaded Banners</value>
+  </data>
+  <data name="NavigateWhenClickIntoMobileTopBanner" xml:space="preserve">
+    <value>Navigate when click into mobile top banner</value>
+  </data>
+  <data name="BannerDisplayInDesktopCenterScreen" xml:space="preserve">
+    <value>Banner display in desktop center screen</value>
+  </data>
+  <data name="DesktopCenterBanner" xml:space="preserve">
+    <value>Center</value>
+  </data>
+  <data name="NavigateWhenClickIntoDesktopCenterBanner" xml:space="preserve">
+    <value>Navigate when click into desktop center banner</value>
+  </data>
+  <data name="BannerDisplayInDesktopLeftScreen" xml:space="preserve">
+    <value>Banner display in desktop left side</value>
+  </data>
+  <data name="BannerDisplayInDesktopRightScreen" xml:space="preserve">
+    <value>Banner display in desktop right side</value>
+  </data>
+  <data name="DesktopLeftBanner" xml:space="preserve">
+    <value>Left</value>
+  </data>
+  <data name="DesktopRightBanner" xml:space="preserve">
+    <value>Right</value>
+  </data>
+  <data name="BannerDisplayInMobileCenterScreen" xml:space="preserve">
+    <value>Banner display in mobile center screen</value>
+  </data>
+  <data name="MobileCenterBanner" xml:space="preserve">
+    <value>Center</value>
+  </data>
+  <data name="NavigateWhenClickIntoDesktopLeftBanner" xml:space="preserve">
+    <value>Navigate when click into desktop left banner</value>
+  </data>
+  <data name="NavigateWhenClickIntoDesktopRightBanner" xml:space="preserve">
+    <value>Navigate when click into desktop right banner</value>
+  </data>
+  <data name="NavigateWhenClickIntoMobileCenterBanner" xml:space="preserve">
+    <value>Navigate when click into mobile center banner</value>
+  </data>
+  <data name="BannerDisplayInMobileBetweenIdentifyAndBackstage" xml:space="preserve">
+    <value>Banner display in mobile between identify and backstage section</value>
+  </data>
+  <data name="MobileBottomBanner" xml:space="preserve">
+    <value>Bottom</value>
+  </data>
+  <data name="NavigateWhenClickIntoMobileBottomBanner" xml:space="preserve">
+    <value>Navigate when click into mobile bottom banner</value>
+  </data>
+  <data name="CommentContent" xml:space="preserve">
+    <value>Comment Content</value>
+  </data>
+  <data name="CommentDate" xml:space="preserve">
+    <value>Comment Date</value>
+  </data>
+  <data name="MembershipEvent" xml:space="preserve">
+    <value>Membership Event</value>
+  </data>
+  <data name="UserEmail" xml:space="preserve">
+    <value>User Email</value>
+  </data>
+  <data name="Luckynumber" xml:space="preserve">
+    <value>số may mắn</value>
+  </data>
+  <data name="LuckynumberAdmin" xml:space="preserve">
+    <value>Lucky number</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="MembershipEventWinner" xml:space="preserve">
+    <value>Membership Event Winner</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="SendToUsers" xml:space="preserve">
+    <value>Send to users</value>
+  </data>
+  <data name="TotalUsers" xml:space="preserve">
+    <value>Total Users</value>
+  </data>
+  <data name="RelatedPostView" xml:space="preserve">
+    <value>~/Views/Component/_RelatedPosts.cshtml</value>
+  </data>
+  <data name="SidebarBannerView" xml:space="preserve">
+    <value>~/Views/Component/_SidebarBanner.cshtml</value>
+  </data>
+  <data name="SidebarPostView" xml:space="preserve">
+    <value>~/Views/Component/_SidebarPosts.cshtml</value>
+  </data>
+  <data name="ManagementLeague" xml:space="preserve">
+    <value>League Management</value>
+  </data>
+  <data name="LeagueName" xml:space="preserve">
+    <value>League Name</value>
+  </data>
+  <data name="Major" xml:space="preserve">
+    <value>Major</value>
+  </data>
+  <data name="Priority" xml:space="preserve">
+    <value>Priority</value>
+  </data>
+  <data name="IsMajor" xml:space="preserve">
+    <value>IsMajor</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="AddLeague" xml:space="preserve">
+    <value>Add League</value>
+  </data>
+  <data name="LeagueFullNameCN" xml:space="preserve">
+    <value>League Full Name CN</value>
+  </data>
+  <data name="LeagueFullNameEN" xml:space="preserve">
+    <value>League Full Name EN</value>
+  </data>
+  <data name="LeagueNameCN" xml:space="preserve">
+    <value>League Name CN</value>
+  </data>
+  <data name="LeagueNameEN" xml:space="preserve">
+    <value>League Name EN</value>
+  </data>
+  <data name="LeagueNameVN" xml:space="preserve">
+    <value>League Name VN</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="CountryVN" xml:space="preserve">
+    <value>Country VN</value>
+  </data>
+  <data name="Hot" xml:space="preserve">
+    <value>Hot</value>
+  </data>
+  <data name="IsHot" xml:space="preserve">
+    <value>IsHot</value>
+  </data>
+  <data name="LeagueId" xml:space="preserve">
+    <value>League ID</value>
+  </data>
+  <data name="BasketballEN" xml:space="preserve">
+    <value>Basketball</value>
+  </data>
+  <data name="Assist" xml:space="preserve">
+    <value>Kiến Tạo</value>
+  </data>
+  <data name="SoccerEN" xml:space="preserve">
+    <value>Soccer</value>
+  </data>
+  <data name="Board" xml:space="preserve">
+    <value>Bảng</value>
+  </data>
+  <data name="FairPlay" xml:space="preserve">
+    <value>+/-</value>
+  </data>
+  <data name="Point" xml:space="preserve">
+    <value>Điểm</value>
+  </data>
+  <data name="Standing" xml:space="preserve">
+    <value>Bảng Xếp Hạng</value>
+  </data>
+  <data name="Top10" xml:space="preserve">
+    <value>TOP 10</value>
+  </data>
+  <data name="Win" xml:space="preserve">
+    <value>Bàn Thắng</value>
+  </data>
+  <data name="PlayerFullNameEN" xml:space="preserve">
+    <value>Player Full Name EN</value>
+  </data>
+  <data name="PlayerNameEN" xml:space="preserve">
+    <value>Player Name EN</value>
+  </data>
+  <data name="Top" xml:space="preserve">
+    <value>Top</value>
+  </data>
+  <data name="TopScorersManagement" xml:space="preserve">
+    <value>Top Scorers</value>
+  </data>
+  <data name="AddPlayer" xml:space="preserve">
+    <value>AddPlayer</value>
+  </data>
+  <data name="TeamFullNameEN" xml:space="preserve">
+    <value>Team Full Name EN</value>
+  </data>
+  <data name="TeamNameEN" xml:space="preserve">
+    <value>Team Name EN</value>
+  </data>
+  <data name="MatchManagement" xml:space="preserve">
+    <value>Match Management</value>
+  </data>
+  <data name="AwayIconVN" xml:space="preserve">
+    <value>Away Icon VN</value>
+  </data>
+  <data name="AwayLogo" xml:space="preserve">
+    <value>Away Logo</value>
+  </data>
+  <data name="AwayName" xml:space="preserve">
+    <value>Away Name</value>
+  </data>
+  <data name="AwayNameVN" xml:space="preserve">
+    <value>Away Name VN</value>
+  </data>
+  <data name="HomeIconVN" xml:space="preserve">
+    <value>Home Icon VN</value>
+  </data>
+  <data name="HomeLogo" xml:space="preserve">
+    <value>Home Logo</value>
+  </data>
+  <data name="HomeName" xml:space="preserve">
+    <value>Home Name</value>
+  </data>
+  <data name="HomeNameVN" xml:space="preserve">
+    <value>Home Name VN</value>
+  </data>
+  <data name="StartTime" xml:space="preserve">
+    <value>Start Time</value>
+  </data>
+  <data name="StandingManagement" xml:space="preserve">
+    <value>Standing Management</value>
+  </data>
+  <data name="IconVN" xml:space="preserve">
+    <value>Icon VN</value>
+  </data>
+  <data name="TeamNameVN" xml:space="preserve">
+    <value>Team Name VN</value>
+  </data>
+  <data name="Position" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="MinigameWorldCup2022" xml:space="preserve">
+    <value>Minigame World Cup</value>
+  </data>
+  <data name="TeamWinner" xml:space="preserve">
+    <value>Team Winner</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value>Team Name VN</value>
+  </data>
+  <data name="TeamName" xml:space="preserve">
+    <value>Team Name</value>
+  </data>
+  <data name="GroupName" xml:space="preserve">
+    <value>Group Name</value>
+  </data>
+  <data name="1HScore" xml:space="preserve">
+    <value>1H Score</value>
+  </data>
+  <data name="2HScore" xml:space="preserve">
+    <value>2H Score</value>
+  </data>
+  <data name="AGG" xml:space="preserve">
+    <value>AGG</value>
+  </data>
+  <data name="PEN" xml:space="preserve">
+    <value>PEN</value>
+  </data>
+  <data name="MatchStatus" xml:space="preserve">
+    <value>Match Status</value>
+  </data>
+  <data name="Round" xml:space="preserve">
+    <value>Round</value>
+  </data>
+  <data name="Stage" xml:space="preserve">
+    <value>Stage</value>
+  </data>
+  <data name="Drawn" xml:space="preserve">
+    <value>Drawn</value>
+  </data>
+  <data name="GoalsAgainst" xml:space="preserve">
+    <value>Goals Against</value>
+  </data>
+  <data name="GoalsDiff" xml:space="preserve">
+    <value>Goals Diff</value>
+  </data>
+  <data name="GoalsFor" xml:space="preserve">
+    <value>Goals For</value>
+  </data>
+  <data name="Lost" xml:space="preserve">
+    <value>Lost</value>
+  </data>
+  <data name="Played" xml:space="preserve">
+    <value>Played</value>
+  </data>
+  <data name="Points" xml:space="preserve">
+    <value>Points</value>
+  </data>
+  <data name="TeamIcon" xml:space="preserve">
+    <value>Team Icon</value>
+  </data>
+  <data name="Won" xml:space="preserve">
+    <value>Won</value>
+  </data>
+  <data name="TennisEN" xml:space="preserve">
+    <value>TennisEN</value>
+  </data>
+  <data name="Battle" xml:space="preserve">
+    <value>Trận</value>
+  </data>
+  <data name="FTScore" xml:space="preserve">
+    <value>FT Score</value>
+  </data>
+  <data name="CountUserInteractions" xml:space="preserve">
+    <value>Count User Interactions</value>
+  </data>
+  <data name="HomepageManagement" xml:space="preserve">
+    <value>Homepage Widgets</value>
+  </data>
+  <data name="BannerPostAdmin" xml:space="preserve">
+    <value>Banner Post Detail Info</value>
+  </data>
+  <data name="BannerDesktop" xml:space="preserve">
+    <value>Banner Desktop Info</value>
+  </data>
+  <data name="BannerMobile" xml:space="preserve">
+    <value>Banner Mobile Info</value>
+  </data>
+  <data name="BannerInterscroller" xml:space="preserve">
+    <value>Banner Interscroller</value>
+  </data>
+  <data name="TransferHome" xml:space="preserve">
+    <value>Tin chuyển nhượng</value>
+  </data>
+  <data name="VideoHome" xml:space="preserve">
+    <value>Video bàn thắng</value>
+  </data>
+  <data name="CategoryManagement" xml:space="preserve">
+    <value>Category Management</value>
+  </data>
+</root>

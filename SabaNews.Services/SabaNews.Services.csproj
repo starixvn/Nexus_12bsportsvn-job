@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <CodeAnalysisRuleSet>..\.sonarlint\sabanewscsharp.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <AdditionalFiles Include="..\.sonarlint\sabanews\CSharp\SonarLint.xml" Link="SonarLint.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Livescore\SabaNews.Livescore.Services\SabaNews.Livescore.Services.csproj" />
+    <ProjectReference Include="..\SabaNews.Core\SabaNews.Core.csproj" />
+    <ProjectReference Include="..\SabaNews.Criteria\SabaNews.Criteria.csproj" />
+    <ProjectReference Include="..\SabaNews.Models\SabaNews.Models.csproj" />
+    <ProjectReference Include="..\SabaNews.Resources\SabaNews.Resources.csproj" />
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+</Project>

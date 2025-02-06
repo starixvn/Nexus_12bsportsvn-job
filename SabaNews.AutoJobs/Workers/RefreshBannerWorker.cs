@@ -1,0 +1,31 @@
+﻿using Microsoft.Extensions.Options;
+using SabaNews.AutoJobs.Constants;
+using SabaNews.AutoJobs.Helpers;
+using SabaNews.AutoJobs.Models;
+using SabaNews.Core.Services;
+using SabaNews.Services.Interfaces;
+
+namespace SabaNews.AutoJobs.Workers
+{
+    using System.Collections.Generic;
+    using System.Threading.Tasks;
+    using SabaNews.WinowsService.Workers;
+
+    public class RefreshBannerWorker : BaseWorker
+    {
+        private readonly IRefreshCachingService refreshCachingService;
+
+        public RefreshBannerWorker(IRefreshCachingService refreshCachingService,
+            IOptions<List<JobSettings>> jobSettings,
+            ILogServiceProvider logService) : base(logService)
+        {
+            this.refreshCachingService = refreshCachingService;
+            jobSetting = JobSettingHelper.GetJobConfig(jobSettings.Value, JobNames.RefreshBannerCaching);
+        }
+
+        public override async Task ExecuteJobAsync()
+        {
+            await refreshCachingService.UpdateBannerCaching();
+        }
+    }
+}

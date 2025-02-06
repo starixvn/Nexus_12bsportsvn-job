@@ -1,0 +1,9 @@
+﻿Date time: 15 Nov 2021 16:25:26 --- SP name: banner_get_info --- Runtime: 352 ms --- Params: {}
+-------------------------------
+Date time: 15 Nov 2021 16:25:26 --- SP name: banner_get_info --- Runtime: 58 ms --- Params: {}
+-------------------------------
+Date time: 15 Nov 2021 16:25:26 --- SP name: get_posts_by_cate_slug --- Runtime: 183 ms --- Params: {"_CategorySlug":"hau-truong","_Start":0,"_End":10,"TotalItems":98}
+-------------------------------
+Date time: 15 Nov 2021 16:25:26 --- SP name: get_category_detail --- Runtime: 69 ms --- Params: {"_Slug":"hau-truong"}
+-------------------------------
+Date time: 15 Nov 2021 16:25:26 --- SP name: banner_get_info --- Runtime: 53 ms --- Params: {}
