@@ -1,30 +1,29 @@
-﻿namespace SabaNews.AutoJobs.Workers
+﻿namespace SabaNews.AutoJobs.Workers;
+
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using Microsoft.Extensions.Options;
+using SabaNews.AutoJobs.Constants;
+using SabaNews.AutoJobs.Helpers;
+using SabaNews.AutoJobs.Models;
+using SabaNews.Core.Services;
+using SabaNews.Services.Interfaces;
+using SabaNews.WinowsService.Workers;
+
+public class RefreshEuro2024HomepageCachingWorker : BaseWorker
 {
-    using System.Collections.Generic;
-    using System.Threading.Tasks;
-    using Microsoft.Extensions.Options;
-    using SabaNews.AutoJobs.Constants;
-    using SabaNews.AutoJobs.Helpers;
-    using SabaNews.AutoJobs.Models;
-    using SabaNews.Core.Services;
-    using SabaNews.Services.Interfaces;
-    using SabaNews.WinowsService.Workers;
+    private readonly IRefreshCachingService refreshCachingService;
 
-    public class RefreshEuro2024HomepageCachingWorker : BaseWorker
+    public RefreshEuro2024HomepageCachingWorker(IRefreshCachingService refreshCachingService,
+        IOptions<List<JobSettings>> jobSettings,
+        ILogServiceProvider logService) : base(logService)
     {
-        private readonly IRefreshCachingService refreshCachingService;
+        this.refreshCachingService = refreshCachingService;
+        jobSetting = JobSettingHelper.GetJobConfig(jobSettings.Value, JobNames.RefreshEuro2024HomepageCaching);
+    }
 
-        public RefreshEuro2024HomepageCachingWorker(IRefreshCachingService refreshCachingService,
-            IOptions<List<JobSettings>> jobSettings,
-            ILogServiceProvider logService) : base(logService)
-        {
-            this.refreshCachingService = refreshCachingService;
-            jobSetting = JobSettingHelper.GetJobConfig(jobSettings.Value, JobNames.RefreshEuro2024HomepageCaching);
-        }
-
-        public override async Task ExecuteJobAsync()
-        {
-            await refreshCachingService.UpdateEuro2024HomepageCaching();
-        }
+    public override async Task ExecuteJobAsync()
+    {
+        await refreshCachingService.UpdateEuro2024HomepageCaching();
     }
 }

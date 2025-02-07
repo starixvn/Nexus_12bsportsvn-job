@@ -1,11 +1,10 @@
-﻿namespace SabaNews.Livescore.Services.Criteria.League
+﻿namespace SabaNews.Livescore.Services.Criteria.League;
+
+using Fanex.Data.Repository;
+
+public class GetAllLeaguesCriteria : CriteriaBase
 {
-    using Fanex.Data.Repository;
+    public override string GetSettingKey() => "Livescore_League_GetAll";
 
-    public class GetAllLeaguesCriteria : CriteriaBase
-    {
-        public override string GetSettingKey() => "Livescore_League_GetAll";
-
-        public override bool IsValid() => true;
-    }
+    public override bool IsValid() => true;
 }

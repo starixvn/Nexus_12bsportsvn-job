@@ -1,31 +1,30 @@
-﻿namespace SabaNews.Core.Middlewares
+﻿namespace SabaNews.Core.Middlewares;
+
+using System;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
+using SabaNews.Core.Services;
+
+public class ErrorHandler
 {
-    using System;
-    using System.Threading.Tasks;
-    using Microsoft.AspNetCore.Http;
-    using SabaNews.Core.Services;
+    private readonly RequestDelegate next;
+    private readonly ILogServiceProvider logService;
 
-    public class ErrorHandler
+    public ErrorHandler(RequestDelegate next, ILogServiceProvider logService)
     {
-        private readonly RequestDelegate next;
-        private readonly ILogServiceProvider logService;
+        this.next = next;
+        this.logService = logService;
+    }
 
-        public ErrorHandler(RequestDelegate next, ILogServiceProvider logService)
+    public async Task InvokeAsync(HttpContext context)
+    {
+        try
         {
-            this.next = next;
-            this.logService = logService;
+            await next(context);
         }
-
-        public async Task InvokeAsync(HttpContext context)
+        catch (Exception ex)
         {
-            try
-            {
-                await next(context);
-            }
-            catch (Exception ex)
-            {
-                await logService.WriteExceptionSentryErrorAsync(ex);
-            }
+            await logService.WriteExceptionSentryErrorAsync(ex);
         }
     }
 }

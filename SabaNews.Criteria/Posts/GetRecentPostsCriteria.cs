@@ -1,17 +1,16 @@
-﻿namespace SabaNews.Criteria.Posts
+﻿namespace SabaNews.Criteria.Posts;
+
+using Fanex.Data.Repository;
+
+public class GetRecentPostsCriteria : CriteriaBase
 {
-    using Fanex.Data.Repository;
+    public int Start { get; set; }
 
-    public class GetRecentPostsCriteria : CriteriaBase
-    {
-        public int Start { get; set; }
+    public int End { get; set; }
 
-        public int End { get; set; }
+    public int TotalItems { get; set; }
 
-        public int TotalItems { get; set; }
+    public override string GetSettingKey() => "get_recent_posts";
 
-        public override string GetSettingKey() => "get_recent_posts";
-
-        public override bool IsValid() => true;
-    }
+    public override bool IsValid() => true;
 }

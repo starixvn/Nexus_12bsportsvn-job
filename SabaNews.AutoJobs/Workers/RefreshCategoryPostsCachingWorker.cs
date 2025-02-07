@@ -1,30 +1,29 @@
-namespace SabaNews.AutoJobs.Workers
+namespace SabaNews.AutoJobs.Workers;
+
+using Microsoft.Extensions.Options;
+using SabaNews.AutoJobs.Constants;
+using SabaNews.AutoJobs.Helpers;
+using SabaNews.AutoJobs.Models;
+using SabaNews.Core.Services;
+using SabaNews.Services.Interfaces;
+using SabaNews.WinowsService.Workers;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+
+public class RefreshCategoryPostsCachingWorker : BaseWorker
 {
-    using Microsoft.Extensions.Options;
-    using SabaNews.AutoJobs.Constants;
-    using SabaNews.AutoJobs.Helpers;
-    using SabaNews.AutoJobs.Models;
-    using SabaNews.Core.Services;
-    using SabaNews.Services.Interfaces;
-    using SabaNews.WinowsService.Workers;
-    using System.Collections.Generic;
-    using System.Threading.Tasks;
+    private readonly IRefreshCachingService refreshCachingService;
 
-    public class RefreshCategoryPostsCachingWorker : BaseWorker
+    public RefreshCategoryPostsCachingWorker(IRefreshCachingService refreshCachingService,
+        IOptions<List<JobSettings>> jobSettings,
+        ILogServiceProvider logService) : base(logService)
     {
-        private readonly IRefreshCachingService refreshCachingService;
+        this.refreshCachingService = refreshCachingService;
+        jobSetting = JobSettingHelper.GetJobConfig(jobSettings.Value, JobNames.RefreshCategoryPostsCaching);
+    }
 
-        public RefreshCategoryPostsCachingWorker(IRefreshCachingService refreshCachingService,
-            IOptions<List<JobSettings>> jobSettings,
-            ILogServiceProvider logService) : base(logService)
-        {
-            this.refreshCachingService = refreshCachingService;
-            jobSetting = JobSettingHelper.GetJobConfig(jobSettings.Value, JobNames.RefreshCategoryPostsCaching);
-        }
-
-        public override async Task ExecuteJobAsync()
-        {
-            await refreshCachingService.UpdateCategoryPostCaching();
-        }
+    public override async Task ExecuteJobAsync()
+    {
+        await refreshCachingService.UpdateCategoryPostCaching();
     }
 }

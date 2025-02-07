@@ -1,15 +1,14 @@
-﻿namespace SabaNews.Criteria.Posts
+﻿namespace SabaNews.Criteria.Posts;
+
+using Fanex.Data.Repository;
+
+public class CheckTypeCategoryCriteria : CriteriaBase
 {
-    using Fanex.Data.Repository;
+    public string _Parent { get; set; }
 
-    public class CheckTypeCategoryCriteria : CriteriaBase
-    {
-        public string _Parent { get; set; }
+    public int _ID { get; set; }
 
-        public int _ID { get; set; }
+    public override string GetSettingKey() => "check_type_category";
 
-        public override string GetSettingKey() => "check_type_category";
-
-        public override bool IsValid() => true;
-    }
+    public override bool IsValid() => true;
 }

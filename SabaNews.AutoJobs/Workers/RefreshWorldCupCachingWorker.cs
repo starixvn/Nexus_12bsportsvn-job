@@ -1,30 +1,29 @@
-﻿namespace SabaNews.AutoJobs.Workers
+﻿namespace SabaNews.AutoJobs.Workers;
+
+using Microsoft.Extensions.Options;
+using SabaNews.AutoJobs.Constants;
+using SabaNews.AutoJobs.Helpers;
+using SabaNews.AutoJobs.Models;
+using SabaNews.Core.Services;
+using SabaNews.Services.Interfaces;
+using SabaNews.WinowsService.Workers;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+
+public class RefreshWorldCupCachingWorker : BaseWorker
 {
-    using Microsoft.Extensions.Options;
-    using SabaNews.AutoJobs.Constants;
-    using SabaNews.AutoJobs.Helpers;
-    using SabaNews.AutoJobs.Models;
-    using SabaNews.Core.Services;
-    using SabaNews.Services.Interfaces;
-    using SabaNews.WinowsService.Workers;
-    using System.Collections.Generic;
-    using System.Threading.Tasks;
+    private readonly IRefreshCachingService refreshCachingService;
 
-    public class RefreshWorldCupCachingWorker : BaseWorker
+    public RefreshWorldCupCachingWorker(IRefreshCachingService refreshCachingService,
+        IOptions<List<JobSettings>> jobSettings,
+        ILogServiceProvider logService) : base(logService)
     {
-        private readonly IRefreshCachingService refreshCachingService;
+        this.refreshCachingService = refreshCachingService;
+        jobSetting = JobSettingHelper.GetJobConfig(jobSettings.Value, JobNames.RefreshWorldCupCaching);
+    }
 
-        public RefreshWorldCupCachingWorker(IRefreshCachingService refreshCachingService,
-            IOptions<List<JobSettings>> jobSettings,
-            ILogServiceProvider logService) : base(logService)
-        {
-            this.refreshCachingService = refreshCachingService;
-            jobSetting = JobSettingHelper.GetJobConfig(jobSettings.Value, JobNames.RefreshWorldCupCaching);
-        }
-
-        public override async Task ExecuteJobAsync()
-        {
-            await refreshCachingService.UpdateWorldCupCaching();
-        }
+    public override async Task ExecuteJobAsync()
+    {
+        await refreshCachingService.UpdateWorldCupCaching();
     }
 }

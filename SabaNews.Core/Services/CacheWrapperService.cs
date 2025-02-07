@@ -1,44 +1,43 @@
-﻿namespace SabaNews.Core.Services
+﻿namespace SabaNews.Core.Services;
+
+using System.Threading.Tasks;
+using Fanex.Caching;
+using Newtonsoft.Json;
+
+public class CacheWrapperService : ICacheWrapperService
 {
-    using System.Threading.Tasks;
-    using Fanex.Caching;
-    using Newtonsoft.Json;
+    private readonly ICacheService cacheService;
 
-    public class CacheWrapperService : ICacheWrapperService
+    public CacheWrapperService(ICacheService cacheService)
     {
-        private readonly ICacheService cacheService;
+        this.cacheService = cacheService;
+    }
 
-        public CacheWrapperService(ICacheService cacheService)
+    public async Task<T> GetAsync<T>(string key)
+    {
+        string jsonResult = await cacheService.GetAsync<string>(key);
+
+        if (string.IsNullOrWhiteSpace(jsonResult))
         {
-            this.cacheService = cacheService;
+            return default;
         }
 
-        public async Task<T> GetAsync<T>(string key)
-        {
-            string jsonResult = await cacheService.GetAsync<string>(key);
+        var result = JsonConvert.DeserializeObject<T>(jsonResult);
+        return result;
+    }
 
-            if (string.IsNullOrWhiteSpace(jsonResult))
-            {
-                return default;
-            }
+    public async Task SetAsync<T>(string key, T data, CacheItemOptions options)
+    {
+        await cacheService.SetAsync(key, JsonConvert.SerializeObject(data), options);
+    }
 
-            var result = JsonConvert.DeserializeObject<T>(jsonResult);
-            return result;
-        }
+    public async Task SetAsync<T>(string key, T data)
+    {
+        await cacheService.SetAsync(key, JsonConvert.SerializeObject(data));
+    }
 
-        public async Task SetAsync<T>(string key, T data, CacheItemOptions options)
-        {
-            await cacheService.SetAsync(key, JsonConvert.SerializeObject(data), options);
-        }
-
-        public async Task SetAsync<T>(string key, T data)
-        {
-            await cacheService.SetAsync(key, JsonConvert.SerializeObject(data));
-        }
-
-        public async Task Remove(string key)
-        {
-            await cacheService.RemoveAsync(key);
-        }
+    public async Task Remove(string key)
+    {
+        await cacheService.RemoveAsync(key);
     }
 }

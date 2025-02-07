@@ -1,25 +1,24 @@
-﻿namespace SabaNews.Models
+﻿namespace SabaNews.Models;
+
+using System;
+
+public class NewsSitemapModel
 {
-    using System;
+    public long ID { get; set; }
 
-    public class NewsSitemapModel
+    public string Slug { get; set; }
+
+    public string Title { get; set; }
+
+    public DateTime? ModifiedDate { get; set; }
+
+    public string Tags { get; set; }
+
+    public string Uri
     {
-        public long ID { get; set; }
-
-        public string Slug { get; set; }
-
-        public string Title { get; set; }
-
-        public DateTime? ModifiedDate { get; set; }
-
-        public string Tags { get; set; }
-
-        public string Uri
+        get
         {
-            get
-            {
-                return $"{Slug}-{ID}.html";
-            }
+            return $"{Slug}-{ID}.html";
         }
     }
 }

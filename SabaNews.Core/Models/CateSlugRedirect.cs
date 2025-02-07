@@ -1,10 +1,9 @@
-﻿namespace SabaNews.Core.Models
+﻿namespace SabaNews.Core.Models;
+
+public class CateSlugRedirect
 {
-    public class CateSlugRedirect
-    {
-        public string OldSlug { get; set; }
+    public string OldSlug { get; set; }
 
-        public string NewSlug { get; set; }
+    public string NewSlug { get; set; }
 
-    }
 }

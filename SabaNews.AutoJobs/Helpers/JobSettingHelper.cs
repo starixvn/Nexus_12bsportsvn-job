@@ -11,12 +11,5 @@
         {
             return jobConfigs.FirstOrDefault(job => job.JobName.Equals(jobName, StringComparison.InvariantCultureIgnoreCase));
         }
-
-        public static bool IsEnabledJob(IEnumerable<JobSettings> jobConfigs, string jobName)
-        {
-            var settings = GetJobConfig(jobConfigs, jobName);
-
-            return settings != null && settings.IsEnabled;
-        }
     }
 }

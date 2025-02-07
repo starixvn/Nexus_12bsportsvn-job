@@ -1,17 +1,16 @@
-﻿namespace SabaNews.Core.Services
+﻿namespace SabaNews.Core.Services;
+
+using Fanex.Data.Repository;
+using System;
+using System.Threading.Tasks;
+
+public interface ILogServiceProvider
 {
-    using Fanex.Data.Repository;
-    using System;
-    using System.Threading.Tasks;
+    Task WriteExceptionSentryErrorAsync(Exception exception);
 
-    public interface ILogServiceProvider
-    {
-        Task WriteExceptionSentryErrorAsync(Exception exception);
+    Task WriteMessageSentryErrorAsync(string logMessage);
 
-        Task WriteMessageSentryErrorAsync(string logMessage);
+    void WriteLogFileInfo(string logMessage);
 
-        void WriteLogFileInfo(string logMessage);
-
-        void WriteLogFileTrackingSP(ICriteria criteria, long runtime);
-    }
+    void WriteLogFileTrackingSP(ICriteria criteria, long runtime);
 }

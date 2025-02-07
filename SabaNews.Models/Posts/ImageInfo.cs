@@ -1,13 +1,12 @@
-﻿namespace SabaNews.Models.Posts
+﻿namespace SabaNews.Models.Posts;
+
+public class ImageInfo
 {
-    public class ImageInfo
-    {
-        public string ImageType { get; set; }
+    public string ImageType { get; set; }
 
-        public int Width { get; set; }
+    public int Width { get; set; }
 
-        public int Height { get; set; }
+    public int Height { get; set; }
 
-        public string ImageUrl { get; set; }
-    }
+    public string ImageUrl { get; set; }
 }

@@ -1,9 +1,8 @@
-﻿namespace SabaNews.Core.Models
-{
-    public class KeyValue
-    {
-        public int Id { get; set; }
+﻿namespace SabaNews.Core.Models;
 
-        public string Name { get; set; }
-    }
+public class KeyValue
+{
+    public int Id { get; set; }
+
+    public string Name { get; set; }
 }

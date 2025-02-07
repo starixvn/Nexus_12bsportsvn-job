@@ -1,12 +1,11 @@
 ﻿
-namespace SabaNews.Criteria.Banner
+namespace SabaNews.Criteria.Banner;
+
+using Fanex.Data.Repository;
+
+public class GetBannerInfoCriteria : CriteriaBase
 {
-    using Fanex.Data.Repository;
+    public override string GetSettingKey() => "banner_get_info";
 
-    public class GetBannerInfoCriteria : CriteriaBase
-    {
-        public override string GetSettingKey() => "banner_get_info";
-
-        public override bool IsValid() => true;
-    }
+    public override bool IsValid() => true;
 }

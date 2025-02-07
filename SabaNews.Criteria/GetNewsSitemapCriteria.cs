@@ -1,11 +1,10 @@
-﻿namespace SabaNews.Criteria
-{
-    using Fanex.Data.Repository;
-    
-    public class GetNewsSitemapCriteria : CriteriaBase
-    {
-        public override string GetSettingKey() => "get_sitemap_news";
+﻿namespace SabaNews.Criteria;
 
-        public override bool IsValid() => true;
-    }
+using Fanex.Data.Repository;
+
+public class GetNewsSitemapCriteria : CriteriaBase
+{
+    public override string GetSettingKey() => "get_sitemap_news";
+
+    public override bool IsValid() => true;
 }

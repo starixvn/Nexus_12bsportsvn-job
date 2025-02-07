@@ -1,8 +1,7 @@
-﻿namespace SabaNews.Models.ViewModel.Posts
+﻿namespace SabaNews.Models.ViewModel.Posts;
+
+public class Subjects
 {
-    public class Subjects
-    {
-        public int Id { get; set; }
-        public string Name { get; set; }
-    }
+    public int Id { get; set; }
+    public string Name { get; set; }
 }
